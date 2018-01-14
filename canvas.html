@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style type="text/css">
+		*{
+			margin: 50px 50px;
+		}
+		canvas{
+			background-color: lightblue;
+			border: 2px double blue;
+		}
+	</style>
+</head>
+<body>
+	<canvas height="120px" width="500px" id="mycanvas">
+		browser doesn't support canvas!
+	</canvas>
+	<script type="text/javascript">
+		var canvas=document.getElementById("mycanvas");
+		var ctx=canvas.getContext("2d");
+		//ctx.beginPath(); //reset the starting pt.
+		//ctx.strokeStyle="red";  assign color to line
+		//ctx.moveTo(x,y); reposition the strting pt.
+		//ctx.lineTo(x,y);  set destination of line
+		//ctx.stroke();  make line visible
+
+		// ctx.strokeStyle="red";
+		// ctx.moveTo(0,0);
+		// ctx.lineTo(100,100);
+		// ctx.stroke(); 
+
+		//typing my name using canvas
+		ctx.beginPath();
+		ctx.moveTo(5,110);
+		ctx.lineTo(50,5);
+		ctx.lineTo(100,110);
+		ctx.stroke();
+
+		ctx.beginPath();
+		ctx.moveTo(22,70);
+		ctx.lineTo(80,70);
+		ctx.stroke();
+
+		ctx.beginPath();
+		ctx.moveTo(105,110);
+		ctx.lineTo(105,5);
+		ctx.lineTo(180,110);
+		ctx.lineTo(180,5);
+		ctx.stroke();
+		
+		ctx.beginPath();
+		ctx.moveTo(185,5);
+		ctx.lineTo(185,110);
+		ctx.stroke();
+		
+		ctx.beginPath();
+		ctx.moveTo(185,52.5);
+		ctx.lineTo(250,5);
+		ctx.stroke();
+		
+		ctx.beginPath();
+		ctx.moveTo(185,52.5);
+		ctx.lineTo(250,110);
+		ctx.stroke();
+		
+		ctx.beginPath();
+		ctx.moveTo(255,5);
+		ctx.lineTo(255,105);
+		ctx.lineTo(260,110);
+		ctx.lineTo(310,110);
+		ctx.lineTo(315,105);
+		ctx.lineTo(315,5);	
+		ctx.stroke();
+
+		ctx.beginPath();
+		ctx.moveTo(380,5);
+		ctx.lineTo(325,5);
+		ctx.lineTo(320,10);
+		ctx.lineTo(320,47.5);
+		ctx.lineTo(325,52.5);
+		ctx.lineTo(375,52.5);
+		ctx.lineTo(380,57.5);
+		ctx.lineTo(380,105);
+		ctx.lineTo(375,110);
+		ctx.lineTo(320,110);
+		ctx.stroke();
+		
+		ctx.beginPath();
+		ctx.moveTo(385,5);
+		ctx.lineTo(385,110);
+		ctx.stroke();
+		
+		ctx.beginPath();
+		ctx.moveTo(385,52.5);
+		ctx.lineTo(440,52.5);
+		ctx.stroke();
+		
+		ctx.beginPath();
+		ctx.moveTo(440,5);
+		ctx.lineTo(440,110);
+		ctx.stroke();
+		
+
+	</script>
+</body>
+</html>
